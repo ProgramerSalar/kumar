@@ -91,6 +91,10 @@ See [contribution guidelines](https://github.com/ProgramerSalar/kumar/blob/maste
     - update the Readme file
 
 
+## 5.4.0 
+- stable version of this library
+
+
     
 
 

@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '5.0.0'
+VERSION = '5.4.0'
 DESCRIPTION = '`kumar` is a Python package that provides two high-level features.'
 LONG_DESCRIPTION = 'This is Ai Transformer of easily ways.'
 
@@ -21,7 +21,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=find_packages(),
-    install_requires=['torch', 'tqdm', 'datasets', 'tokenizers', 'tensorboard', 'pathlib'],
+    install_requires=['torch', 'tqdm', 'datasets', 'tokenizers', 'tensorboard', 'pathlib', 'pillow', 'numpy', 'transformers', 'pytorch_lightning'],
     keywords=['python', 'transformer', 'chat-GPT Transformer'],
     classifiers=[
         "Development Status :: 1 - Planning",

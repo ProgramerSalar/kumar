@@ -6,14 +6,7 @@
 ## preload_models_from_standard_weights
 
 
-```
->>> from kumar.diffusion.model_loader import preload_models_from_standard_weights
 
-preload_models_from_standard_weights(
-    ckpt_path= ckpt_path,      # put in the ckpt_path file 
-    device= device
-)
-```
 - run the model in ipynb file Like this 
 - make sure three file are found in the data folder 
     1. ../data/tokenizer_vocab.json         --> [https://huggingface.co/benjamin-paine/stable-diffusion-v1-5/blob/main/tokenizer/vocab.json]
@@ -21,8 +14,8 @@ preload_models_from_standard_weights(
     3. ../data/v1-5-pruned-emaonly.ckpt     --> [https://huggingface.co/benjamin-paine/stable-diffusion-v1-5/blob/main/v1-5-pruned-emaonly.ckpt]
 
 ```
-import model_loader
-import pipeline
+from kumar.diffusion.model_loader import preload_models_from_standard_weights
+from kumar.diffusion.pipeline import generate
 from PIL import Image
 from pathlib import Path
 from transformers import CLIPTokenizer
@@ -39,9 +32,9 @@ elif (torch.has_mps or torch.backends.mps.is_available()) and ALLOW_MPS:
     DEVICE = "mps"
 print(f"Using device: {DEVICE}")
 
-tokenizer = CLIPTokenizer("../data/tokenizer_vocab.json", merges_file="../data/tokenizer_merges.txt")
-model_file = "../data/v1-5-pruned-emaonly.ckpt"
-models = model_loader.preload_models_from_standard_weights(model_file, DEVICE)
+tokenizer = CLIPTokenizer("./data/tokenizer_vocab.json", merges_file="./data/tokenizer_merges.txt")
+model_file = "./data/v1-5-pruned-emaonly.ckpt"
+models = preload_models_from_standard_weights(model_file, DEVICE)
 
 ## TEXT TO IMAGE
 
@@ -55,7 +48,7 @@ cfg_scale = 8  # min: 1, max: 14
 
 input_image = None
 # Comment to disable image to image
-# image_path = "../image/Dog_Breeds.jpg"
+# image_path = "./image/Dog_Breeds.jpg"
 # input_image = Image.open(image_path)
 # Higher values means more noise will be added to the input image, so the result will further from the input image.
 # Lower values means less noise is added to the input image, so output will be closer to the input image.
