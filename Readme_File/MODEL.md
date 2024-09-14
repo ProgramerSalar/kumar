@@ -39,7 +39,7 @@
 ## LayerNormalization
 
 ```
->>> from kumar.Transformer.model import LayerNormalization
+>>> from kumar.model import LayerNormalization
 
 LayerNormalization(
     features:int,   # 512 features 
@@ -52,7 +52,7 @@ LayerNormalization(
 
 ```
 
->>> from kumar.Transformer.model import FeedForwardBlock
+>>> from kumar.model import FeedForwardBlock
 
 FeedForwardBlock(
     d_model:int,       # 512 features 
@@ -65,7 +65,7 @@ FeedForwardBlock(
 ## InputEmbeddings
 
 ```
->>> from kumar.Transformer.model import InputEmbeddings
+>>> from kumar.model import InputEmbeddings
 
 InputEmbeddings(
     d_model:int,     # dimension model of your data Ex: 512
@@ -77,7 +77,7 @@ InputEmbeddings(
 ## PositionalEncoding
 
 ```
->>> from kumar.Transformer.model import PositionalEncoding 
+>>> from kumar.model import PositionalEncoding 
 
 PositionalEncoding(
     d_model: int,      # 512
@@ -90,7 +90,7 @@ PositionalEncoding(
 ## MultiHeadAttentionBlock
 
 ```
->>> from kumar.Transformer.model import MultiHeadAttentionBlock
+>>> from kumar.model import MultiHeadAttentionBlock
 
 MultiHeadAttentionBlock(
     d_model: int,          # 512
@@ -105,7 +105,7 @@ MultiHeadAttentionBlock(
 ## ProjectionLayer
 
 ```
->>> from kumar.Transformer.model import ProjectionLayer 
+>>> from kumar.model import ProjectionLayer 
 
 
 ProjectionLayer(
@@ -120,7 +120,7 @@ ProjectionLayer(
 - please define the ```LayerNormalization``` Function Before this used 
 
 ```
->>> from kumar.Transformer.model import ResidualConnection
+>>> from kumar.model import ResidualConnection
 
 ResidualConnection(
     features: int,
@@ -134,7 +134,7 @@ ResidualConnection(
 - you might define ```MultiHeadAttentionBlock``` and ```FeedForwardBlock```
 
 ```
->>> from kumar.Transformer.model import EncoderBlock
+>>> from kumar.model import EncoderBlock
 
 EncoderBlock(
     features:int,
@@ -151,7 +151,7 @@ EncoderBlock(
 
 
 ```
->>> from kumar.Transformer.model import Encoder
+>>> from kumar.model import Encoder
 
 Encoder(
     features: int,
@@ -166,7 +166,7 @@ Encoder(
 
 
 ```
->>> from kumar.Transformer.model import DecoderBlock
+>>> from kumar.model import DecoderBlock
 
 DecoderBlock(
     features: int,
@@ -185,7 +185,7 @@ DecoderBlock(
 
 
 ```
->>> from kumar.Transformer.model import Decoder
+>>> from kumar.model import Decoder
 
 Decoder(
     features:int,
@@ -203,7 +203,7 @@ Decoder(
 
 
 ```
->>> from kumar.Transformer.model import Transformer
+>>> from kumar.model import Transformer
 
 Transformer(
     encoder: Encoder,

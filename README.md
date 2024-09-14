@@ -71,19 +71,16 @@ See [contribution guidelines](https://github.com/ProgramerSalar/kumar/blob/maste
 ## 2.0.0
 - solve some Error, I will Get the package error 
 
-## 2.1.0 
-- First Stable relased version
 
-   
 
-## 2.2.0
+## 3.0.0
 - Improve document
     - Update the README document
     - Add the Licence 
     - some Required Things 
 
 
-## 2.3.0 
+## 4.0.0 
 - Update the Libarary 
     - add the Diffusion model function 
     - update the Readme document

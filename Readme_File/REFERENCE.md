@@ -14,7 +14,7 @@
 - if you import the Tensor dataset function, which is convert the tensor data from raw data 
 ```
 # import the Tensor dataset Function
->>> from PSTansformer.dataset import BilingualDataset
+>>> from kumar.dataset import BilingualDataset
 
 # how to used this Tensor dataset which is convert to the Tensor of the row data 
 >>> BilingualDataset(
@@ -53,7 +53,7 @@ def get_config():
 ```
 
 ```
->>> from kumar.Transformer.train import train_model 
+>>> from kumar.train import train_model 
 
     config = get_config()
     train_model(config)
@@ -75,7 +75,7 @@ def get_config():
 ```
 
 ```
->>> from kumar.Transformer.config import latest_weights_file_path
+>>> from kumar.config import latest_weights_file_path
 
 config = get_config()
 latest_weights_file_path(config)
@@ -105,7 +105,7 @@ def get_config():
 
 
 ```
->>> from kumar.Transformer.config import get_weights_file_path
+>>> from kumar.config import get_weights_file_path
 
 get_weights_file_path(config, epoch:str)
 ```
