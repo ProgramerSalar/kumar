@@ -86,6 +86,11 @@ See [contribution guidelines](https://github.com/ProgramerSalar/kumar/blob/maste
     - update the Readme document
 
 
+## 5.0.0
+- update the library
+    - update the Readme file
+
+
     
 
 

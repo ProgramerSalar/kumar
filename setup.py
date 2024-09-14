@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '4.0.0'
+VERSION = '5.0.0'
 DESCRIPTION = '`kumar` is a Python package that provides two high-level features.'
 LONG_DESCRIPTION = 'This is Ai Transformer of easily ways.'
 
